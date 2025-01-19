@@ -30,7 +30,7 @@ export function ReportsChart() {
             config={{
               value: {
                 label: "Number of Reports",
-                color: "hsl(var(--chart-1))",
+                color: "hsl(var(--primary))",
               },
             }}
             className="h-[400px]"
@@ -40,7 +40,7 @@ export function ReportsChart() {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <ChartTooltip content={<ChartTooltipContent />} />
-                <Bar dataKey="value" fill="var(--color-value)" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </ChartContainer>
@@ -56,4 +56,3 @@ export function ReportsChart() {
     </>
   )
 }
-
